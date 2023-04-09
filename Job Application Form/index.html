@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <title>فرم استخدام شرکت</title>
+    <meta property="og:title" content="فرم استخدام شرکت">
+    <meta property="og:type"  content="website">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url"   content="https://job-application form/">
+    <meta property="og:description" content="این صفحه برای دریافت اطلاعات کارجویان و استخدام آسان تر آن ها است">
+    <meta property="og:locale" content="fa-IR">
+    <meta property="og:site_name" content="فرم استخدام شرکت">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+
+  <body style="direction: rtl;">
+    <header>
+      <img src="logo.png">
+    </header>
+    <main>
+      <div class="container">
+      <form action="myserver.com" method="POST" class="needs-validation">
+
+        <fieldset class="scheduler-border">
+    <legend class="scheduler-border">اطلاعات شخصی</legend>
+    <div class="control-group">
+            <label for="name">نام و نام خانوادگی:</label>
+            <input type="text" id="name" name="name" class="form-control form-control-sm">
+            <label for="age">تاریخ تولد:</label>
+            <input type="date" id="age" nsme="age" class="form-control">
+            <label for="phone-number">شماره همراه:</label>
+            <input type="number" id="phone-number" class="form-control" name="phone-number" maxlength="11" placeholder="09999999999">
+            <label for="email">ایمیل:</label>
+            <input type="email" id="email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="example@gmail.com">
+          </div>
+          </fieldset>
+
+        <fieldset class="scheduler-border">
+    <legend class="scheduler-border">سوابق تحصیلی و شغلی</legend>
+    <div class="control-group">
+            <label>آخرین مدرک تحصیلی:</label>
+            <input list="degree" class="form-control">
+            <datalist id="degree">
+              <option value="دیپلم">
+              <option value="کارشناسی">
+              <option value="کارشناسی ارشد">
+              <option value="دکتری">
+            </datalist>
+            <label for="major">رشته تحصیلی:</label>
+            <input type="text" id="major" name="major" class="form-control">
+
+
+            <label for="company">آخرین سازمان یا شرکتی که در آن مشغول به کار بوده‌اید:</label>
+           <input type="text" id="company" name="company" class="form-control form-control-sm">
+           <label for="job-title">سمت:</label>
+           <input type="text" id="job-title" name="job-title" class="form-control form-control-sm">
+           <label for="work-experience">مدت سابقه:</label>
+           <input type="text" id="work-experience" name="work-experience" class="form-control"><br>
+           <label for="other-job-experiences">سوابق کاری دیگر:</label>
+           <input type="text" name="other-job-experiences" id="other-job-experiences" class="form-control form-control-lg">
+          </div>
+          </fieldset>
+
+
+
+          <fieldset class="scheduler-border">
+    <legend class="scheduler-border">مهارت‌ها و زبان‌های خارجی</legend>
+<div class="custom-control custom-radio">
+<label for="eng-language">چه میزان با زبان انگلیسی آشنایی دارید؟
+          <label>پیشرفته
+            <input type="radio">
+          </label>
+          <label>متوسط
+            <input type="radio">
+          </label>
+          <label>مبتدی
+            <input type="radio">
+          </label>
+        </label></div>
+          <label for="other-languages">با چه زبان‌های دیگری آشنایی دارید؟</label>
+          <input type="text" id="other-languages" name="other-languages"  class="form-control form-control-lg"><br>
+
+          <div class="custom-control custom-checkbox"><label class="custom-control-label">به کدام یک از این موارد مسلط هستید؟
+            <label><input type="checkbox" class="custom-control-input">Word</label>
+            <label><input type="checkbox" class="custom-control-input">Excell</label>
+            <label><input type="checkbox" class="custom-control-input">SEO</label>
+            <label><input type="checkbox" class="custom-control-input">HTML</label>
+            <label><input type="checkbox" class="custom-control-input">CSS</label>
+            <label><input type="checkbox" class="custom-control-input">Photoshop</label>
+          </label></div>
+          <label for="other-skills">چه مهارت‌های دیگری دارید؟</label>
+          <input type="text" id="other-skills" name="other-skills" class="form-control form-control-lg">
+        </fieldset>
+        
+        <fieldset class="scheduler-border">
+            <div class="form-group">
+          <label for="resume">لطفا رزومه خود را آپلود کنید</label><br>
+          <input type="file" class="form-control-file" id="resume">
+        </div>
+        </fieldset>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
+      </div>
+    </main>
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3">
+        © 2023 Copyright:
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
